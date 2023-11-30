@@ -16,7 +16,6 @@ document.addEventListener("DOMContentLoaded", function () {
             gameBoard[index] = currentPlayer;
             cell.textContent = currentPlayer;
 
-            // Adiciona classes para alterar a cor de fundo
             cell.classList.add(currentPlayer === "X" ? "bg-red" : "bg-blue");
 
             if (checkWinner()) {
@@ -55,7 +54,7 @@ document.addEventListener("DOMContentLoaded", function () {
         gameBoard = ["", "", "", "", "", "", "", "", ""];
         currentPlayer = "X";
 
-        // Remove as classes de cor de fundo
+        
         cells.forEach((cell) => {
             cell.textContent = "";
             cell.classList.remove("bg-red", "bg-blue");
